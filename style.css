@@ -1,0 +1,54 @@
+body
+{
+	background-color: #DEB887;
+}
+header
+{
+	border-width: 0.3em;
+	border-style: solid;
+	border-color: lightgrey;
+	border-radius: 0.9em;
+	background-image: url("nourriture.jpg");
+	background-repeat: repeat;
+	margin-bottom: 2.5em;
+}
+header h1
+{
+	margin-left: 0.3em;
+	text-shadow: 0 0 0.2em black;
+	color: green; 
+	font-family: Helvetica;
+}
+header a
+{
+	display: solid;
+	background-color: darkgreen;
+	border-radius: 0.2em;
+	padding: 0.2em;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: black;
+	color: white;
+} */
+nav
+{
+	margin: 0.2em;
+}
+nav form input, nav form button
+{
+	float: right;
+}
+header li a
+{
+	color: white;
+}
+article
+{
+	border-top-width: 0.3em;
+	border-top-style: solid;
+	border-top-color: green;
+	border-bottom-width: 0.3em;
+	border-bottom-style: solid;
+	border-bottom-color: green;
+	background-color: white; 
+}
