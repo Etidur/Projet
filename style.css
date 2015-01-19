@@ -5,10 +5,10 @@ body
 header
 {
 	border-width: 0.3em;
-	border-style: solid;
+	border-style: groove;
 	border-color: lightgrey;
 	border-radius: 0.9em;
-	background-image: url("nourriture.jpg");
+	background-image: url("nourriture.png");
 	background-repeat: repeat;
 	margin-bottom: 2.5em;
 }
@@ -19,9 +19,17 @@ header h1
 	color: green; 
 	font-family: Helvetica;
 }
-header a
+header h2
 {
-	display: solid;
+	margin-left: 0.3em;
+}
+header ul li
+{
+	display: inline;
+}
+header nav ul  li a
+{
+	position: relative;
 	background-color: darkgreen;
 	border-radius: 0.2em;
 	padding: 0.2em;
@@ -29,19 +37,14 @@ header a
 	border-style: solid;
 	border-color: black;
 	color: white;
-} */
-nav
-{
-	margin: 0.2em;
+	text-align: center;
+	
 }
-nav form input, nav form button
+header nav ul li form input, nav ul li form button
 {
 	float: right;
-}
-header li a
-{
-	color: white;
-}
+	margin-top: 0.5em;
+} 
 article
 {
 	border-top-width: 0.3em;
@@ -50,5 +53,29 @@ article
 	border-bottom-width: 0.3em;
 	border-bottom-style: solid;
 	border-bottom-color: green;
-	background-color: white; 
+	background-color: white;
+}
+table
+{
+	margin-left: 2em;
+}
+article table th img
+{
+	
+	height: 5em;
+	border-width: 0.2em;
+	border-color: black;
+}
+#gauche
+{
+	float: gauche;
+}
+
+#gauche, #droite
+{
+	width: 25em;
+}
+#droite
+{
+	float:droite;
 }
