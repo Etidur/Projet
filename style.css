@@ -44,8 +44,8 @@ header nav ul li form input, nav ul li form button
 {
 	float: right;
 	margin-top: 0.5em;
-} 
-article
+}
+section
 {
 	border-top-width: 0.3em;
 	border-top-style: solid;
@@ -55,27 +55,49 @@ article
 	border-bottom-color: green;
 	background-color: white;
 }
-table
+
+table, tr, th, td
 {
-	margin-left: 2em;
+	margin-left: 5px;
+	border-width:3px; 
+	border-style:solid; 
+	border-color:black;
+	margin-bottom: 5px;
 }
-article table th img
+th, td
 {
-	
-	height: 5em;
-	border-width: 0.2em;
-	border-color: black;
+	font-size: 20px;
+}
+th, td
+{
+	padding-left: 0.5em;
+	padding-right:0.5em;
+}
+img
+{ 
+	position:static;
+	height: 6em;
 }
 #gauche
 {
+	display:inline-block;
 	float: gauche;
-}
-
-#gauche, #droite
-{
-	width: 25em;
+	width: 20em;
 }
 #droite
 {
+	display: inline-block;
 	float:droite;
+	width: 15 em;
+	height: 10em;
+	margin-left: 3em;
+	float: bottom;
+}
+#commande
+{
+	display: none;
+}
+#commande:target
+{
+	display: inline-block;
 }
