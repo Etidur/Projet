@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Page de commandes</title>
+  </head>
+<body>
+	<header>
+		<h1>
+			STUDENT SHOP
+		</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="QuiSommesNous.html">Qui sommes-nous ?</a></li>
+				<li><form action="PageRecherche.html">
+						<button>Valider</button>
+						<input type="search" placeholder="Rechercher un produit">
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="recap">
+		<div id="gauche">
+		<h2>Articles dans votre panier:</h2>
+		<table>
+			<tr>
+				<th><a href="PageArticle.html">Produit1</a></th><td><img src="Banane.png" alt="Image Banane"></td><td>25€</td>
+			</tr>
+			<tr>
+				<th><a href="PageArticle.html">Produit2</a></th><td><img src="Pomme.jpg" alt="Image Pomme"></td><td>30€</td>
+			</tr>
+			<tr>
+				<th><a href="PageArticle.html">Produit3</a></th><td><img src="Tomates.jpg" alt="Image Tomates"></td><td>56€</td>
+			</tr>
+			<tr>
+				<th colspan=2>Total</th><td>111€</td>
+			</tr>
+		</table>
+		</div>
+		<div id="droite">
+			<div id="choix">
+				<ul>
+					<li><form action="index.html"><button>Poursuivre les achats</button></form></li>
+					<li><form action=#commande><button>Commander ces articles</button></form></li>
+				</ul>
+			</div>
+			<div id="commande">
+				<form id="informations" action=#confirmation>
+					<p>Nom: <input name="nom" placeholder="Nom"><input name="prenom" placeholder="Prénom"></p>
+					<p>
+						Sexe: <label>Homme<input name="sexe" type="radio" value="H"></label>
+						<label>Femme<input name="sexe" type="radio" value="F"></label>
+					</p>
+					<p>Adresse email :<input name="email" placeholder="nom@prenom.com"></p>
+					<p>Mot de passe: <input name="mdp" placeholder="*****"></p>
+					Adresse: 
+						<ul>
+							<li>N° de Rue<input name="numrue"></li>
+							<li>Nom de Rue<input name="nomrue"></li>
+							<li>Ville<input name="ville"></li>
+							<li>Code postal<input name="cp"></li>
+						</ul>
+					<p>
+						Tel: <label>Mobile<input name="typetel" type="radio" value="Mobile"></label>
+						<label>Fixe<input name="typetel" type="radio" value="Fixe"></label>
+						<input name="numtel" placeholder="01 23 45 67 89">
+					</p>
+					<p>
+						<label> Type de payement :</label>
+						<select name="payement" id="pays">
+							<option value="MasterCard">MasterCard</option>
+							<option value="CB">Carte Bleue</option>
+							<option value="Visa">Visa</option>
+							<option value="PayPal">PayPal</option>
+						</select>
+					</p>
+					<button>Valider et régler les achats</button>
+				</form>
+				
+			</div>
+			<p id="confirmation">Merci, votre commande a bien été prise en compte</p>
+		</div>
+	</section>
+
+</body>
+</html>
