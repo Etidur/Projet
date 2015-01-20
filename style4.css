@@ -79,63 +79,110 @@ header nav ul li form input, nav ul li form button
 }
 body
 {
-	background-image: url("images/background-body.jpg");
-	background-size: 50%;
-	background-repeat: repeat;
+	background-color: Peru;
+	font-family: Helvetica;
 } 
-article
+section
 {
-	border-top-width: 0.3em;
-	border-top-style: solid;
-	border-top-color: green;
-	border-bottom-width: 0.3em;
-	border-bottom-style: solid;
-	border-bottom-color: green;
-	background-color: white;
+	margin-left: 0.5em;
 }
-table
+h2
 {
-	margin-left: 2em;
+	margin-left: 0.5em;
+	font-family: Helvetica;
 }
-article table th img
+table, tr, th, td
 {
-	
-	height: 5em;
-	border-width: 0.2em;
-	border-color: black;
+	border-width:2px; 
+	border-style: solid; 
+	border-color:black;
 }
-article#promo
+th, td
 {
-	border:solid 0.2em black;
-	background-color:#FFFF33;
-	margin-right:auto;
-	margin-left:auto;
-	width: 25em;
-	border-radius:0.9em;
+	font-size: 20px;
 }
-
-article#promo h2
+th, td
 {
-	text-align: center;
-	color:white;
-	border:solid 0.1em black;
-	border-radius: 0.3em;
-	background-color:red;
-	font-family: britannic;
+	padding-left: 0.5em;
+	padding-right:0.5em;
 }
-
-table tr th a
+img
+{ 
+	position:static;
+	height: 6em;
+}
+section table a, #choix a
 {
-	color:white;
-	font-family: Cambria;
-	border:solid 0.15em black;
+	text-decoration:none;
+}
+section table a:hover
+{
+	text-decoration:blink;
+	background-color: lightblue;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 0.2em;
+}
+#choix button
+{
+	border-radius: 0.4em;
+	border-width:0.2em;
+	border-style: groove;
+	margin: 0.5em;
+	background-color: LightGreen;
+	padding: 0.9em;
 	border-radius: 0.5em;
-	background-color:red;
-	padding: 0.3em;
-	text-decoration: none;
+    box-shadow: 1px 1px 12px #555;
+	list-style-type: none;
+	margin-bottom:0.5em;
 }
-table tr th a:hover
+#choix li
 {
-	background-color: white;
-	color: red;
+	list-style-type: none;
+}
+#gauche, #commande, #confirmation
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: LightGreen;
+	padding: 0.9em;
+	border-radius: 0.5em;
+    box-shadow: 1px 1px 12px #555;
+}
+#gauche
+{
+	display:inline-block;
+	float: left;
+	width: 20em;
+	padding-left: 0.2em;
+}
+#droite
+{
+	display: inline-block;
+	width: 15em;
+	height: 10em;
+	margin-left: 3em;
+}
+#commande, #choix
+{
+	width: 20em;
+}
+#commande input
+{
+	vertical-align: baseline;
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
+}
+#commande li
+{
+list-style-type: none;
+}
+#commande, #confirmation 
+{
+	display: none;
+}
+#commande:target, #confirmation:target
+{
+	display: inline-block;
+	margin-bottom:5em;
 }
