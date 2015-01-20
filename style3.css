@@ -1,0 +1,99 @@
+body
+{
+	background-color: #DEB887;
+	font-family: Helvetica;
+}
+section
+{
+   margin-left: auto;
+   margin-right: auto;
+   width: 40em;
+}
+header
+{
+	border-width: 0.3em;
+	border-style: groove;
+	border-color: lightgrey;
+	border-radius: 0.9em;
+	background-image: url("nourriture.png");
+	background-repeat: repeat;
+	margin-bottom: 2.5em;
+}
+header h1
+{
+	margin-left: 0.3em;
+	text-shadow: 0 0 0.2em black;
+	color: green; 
+	font-family: Helvetica;
+	font-size: 3em;
+}
+header h2
+{
+	margin-left: 0.3em;
+}
+header ul li
+{
+	display: inline;
+}
+header nav ul  li a
+{
+	position: relative;
+	background-color: darkgreen;
+	border-radius: 0.2em;
+	padding: 0.2em;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: black;
+	color: white;
+	text-align: center;
+	
+}
+nav ul li form input, nav ul li form button
+{
+	float: right;
+	margin-top: 0.5em;
+}
+h2
+{
+	margin-left: 0.5em;
+	font-family: Helvetica;
+}
+table, tr, th, td
+{
+	border-width:2px; 
+	border-style: solid; 
+	border-color:grey;
+}
+th, td
+{
+	font-size: 20px;
+	padding-left: 0.5em;
+	padding-right:0.5em;
+}
+img
+{ 
+	position:static;
+	height: 6em;
+}
+section table a, #choix a
+{
+	text-decoration:none;
+}
+section table a:hover
+{
+	text-decoration:blink;
+	background-color: lightblue;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 0.2em;
+}
+#resultat
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: palegreen;
+	padding: 0.9em;
+	border-radius: 0.5em;
+    box-shadow: 1px 1px 12px #555;
+	width: 30em;
+}
