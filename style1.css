@@ -1,6 +1,7 @@
 body
 {
 	background-color: #DEB887;
+	font-family: Helvetica;
 }
 header
 {
@@ -18,6 +19,7 @@ header h1
 	text-shadow: 0 0 0.2em black;
 	color: green; 
 	font-family: Helvetica;
+	font-size: 3em;
 }
 header h2
 {
@@ -40,13 +42,19 @@ header nav ul  li a
 	text-align: center;
 	
 }
-header nav ul li form input, nav ul li form button
+nav ul li form input, nav ul li form button
 {
 	float: right;
 	margin-top: 0.5em;
 }
+h2
+{
+	margin-left: 0.5em;
+	font-family: Helvetica;
+}
 section
 {
+	height: 32em;
 	border-top-width: 0.3em;
 	border-top-style: solid;
 	border-top-color: green;
@@ -55,14 +63,21 @@ section
 	border-bottom-color: green;
 	background-color: white;
 }
-
+#gauche, #commande, #choix
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: yellow;
+	padding-right: 0.7em;
+	border-radius: 0.5em;
+    box-shadow: 6px 6px 6px grey;
+}
 table, tr, th, td
 {
 	margin-left: 5px;
-	border-width:3px; 
-	border-style:solid; 
-	border-color:black;
-	margin-bottom: 5px;
+	border-width:2px; 
+	border-style: solid; 
+	border-color:lightgrey;
 }
 th, td
 {
@@ -81,17 +96,15 @@ img
 #gauche
 {
 	display:inline-block;
-	float: gauche;
+	float: left;
 	width: 20em;
 }
 #droite
 {
 	display: inline-block;
-	float:droite;
-	width: 15 em;
+	width: 15em;
 	height: 10em;
 	margin-left: 3em;
-	float: bottom;
 }
 #commande
 {
