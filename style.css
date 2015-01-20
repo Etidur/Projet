@@ -1,35 +1,61 @@
 body
 {
-	background-color: #DEB887;
+	background-image: url("images/background-body.jpg");
+	background-size: 50%;
+	background-repeat: repeat;
 }
 header
 {
 	border-width: 0.3em;
-	border-style: groove;
-	border-color: lightgrey;
+	border-style: solid;
+	border-color: white;
 	border-radius: 0.9em;
-	background-image: url("nourriture.png");
-	background-repeat: repeat;
-	margin-bottom: 2.5em;
+	background-image: url("images/background-header.jpg");
+	background-size: 50%;
+    background-repeat: repeat;
+	margin-bottom:2.5em;
 }
+
 header h1
 {
 	margin-left: 0.3em;
+	text-align: center;
 	text-shadow: 0 0 0.2em black;
-	color: green; 
-	font-family: Helvetica;
+	color: white; 
+	font-family: Britannic, Helvetica;
+	font-size: 2.3em;
+	background-color: #FF9933;
+	border: 0.2em double black;
+	border-radius: 50%;
+	padding: 0.35em;
+	display:inline-block;
 }
+
 header h2
 {
-	margin-left: 0.3em;
+	font-family: Aharoni;
+	display:block;
+	text-align:right;
+	margin-right: 0.5em;
+	margin-top: 0em;
+	font-size: 1.7em;
+	position:relative;
+	bottom: 3em;
+	color:white;
 }
+
+header ul
+{
+	margin-bottom:0em;
+}
+
 header ul li
 {
 	display: inline;
 }
 header nav ul  li a
 {
-	position: relative;
+	position:relative;
 	background-color: darkgreen;
 	border-radius: 0.2em;
 	padding: 0.2em;
@@ -38,12 +64,18 @@ header nav ul  li a
 	border-color: black;
 	color: white;
 	text-align: center;
-	
+	text-decoration: none;
+	font-family: Aparajita;
+	font-size: 1.3em;
+	display:inline-block;
 }
 header nav ul li form input, nav ul li form button
 {
 	float: right;
-	margin-top: 0.5em;
+	position:relative;
+	bottom:2em;
+	right: 1em;
+	
 } 
 article
 {
@@ -66,16 +98,35 @@ article table th img
 	border-width: 0.2em;
 	border-color: black;
 }
-#gauche
+article#gauche
 {
 	float: gauche;
+	border:solid 0.2em black;
+	background-color:#FFFF33;
+	margin-right:auto;
+	margin-left:auto;
+	width: 25em;
+	border-radius:0.9em;
 }
 
-#gauche, #droite
+article#gauche h2
 {
-	width: 25em;
+	text-align: center;
+	color:white;
+	border:solid 0.1em black;
+	border-radius: 0.3em;
+	background-color:red;
+	font-family: britannic;
+	display: block-inline;
 }
-#droite
+
+table tr th a
 {
-	float:droite;
+	color:white;
+	font-family: Cambria;
+	border:solid 0.15em black;
+	border-radius: 0.5em;
+	background-color:red;
+	padding: 0.3em;
+	text-decoration: none;
 }
