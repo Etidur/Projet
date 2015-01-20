@@ -3,6 +3,10 @@ body
 	background-color: #DEB887;
 	font-family: Helvetica;
 }
+section
+{
+	margin-left: 0.5em;
+}
 header
 {
 	border-width: 0.3em;
@@ -52,32 +56,11 @@ h2
 	margin-left: 0.5em;
 	font-family: Helvetica;
 }
-section
-{
-	height: 32em;
-	border-top-width: 0.3em;
-	border-top-style: solid;
-	border-top-color: green;
-	border-bottom-width: 0.3em;
-	border-bottom-style: solid;
-	border-bottom-color: green;
-	background-color: white;
-}
-#gauche, #commande, #choix
-{
-	margin-top: 5px;
-	margin-bottom: 5px;
-	background-color: yellow;
-	padding-right: 0.7em;
-	border-radius: 0.5em;
-    box-shadow: 6px 6px 6px grey;
-}
 table, tr, th, td
 {
-	margin-left: 5px;
 	border-width:2px; 
 	border-style: solid; 
-	border-color:lightgrey;
+	border-color:grey;
 }
 th, td
 {
@@ -93,11 +76,50 @@ img
 	position:static;
 	height: 6em;
 }
+section table a, #choix a
+{
+	text-decoration:none;
+}
+section table a:hover
+{
+	text-decoration:blink;
+	background-color: lightblue;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-radius: 0.2em;
+}
+#choix button
+{
+	border-radius: 0.4em;
+	border-width:0.2em;
+	border-style: groove;
+	margin: 0.5em;
+	background-color: palegreen;
+	padding: 0.9em;
+	border-radius: 0.5em;
+    box-shadow: 1px 1px 12px #555;
+	list-style-type: none;
+	margin-bottom:0.5em;
+}
+#choix li
+{
+	list-style-type: none;
+}
+#gauche, #commande, #confirmation
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: palegreen;
+	padding: 0.9em;
+	border-radius: 0.5em;
+    box-shadow: 1px 1px 12px #555;
+}
 #gauche
 {
 	display:inline-block;
 	float: left;
 	width: 20em;
+	padding-left: 0.2em;
 }
 #droite
 {
@@ -106,11 +128,26 @@ img
 	height: 10em;
 	margin-left: 3em;
 }
-#commande
+#commande, #choix
+{
+	width: 20em;
+}
+#commande input
+{
+	vertical-align: baseline;
+	margin-left: 0.5em;
+	margin-bottom: 0.2em;
+}
+#commande li
+{
+list-style-type: none;
+}
+#commande, #confirmation 
 {
 	display: none;
 }
-#commande:target
+#commande:target, #confirmation:target
 {
 	display: inline-block;
+	margin-bottom:5em;
 }
