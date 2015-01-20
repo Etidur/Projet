@@ -1,0 +1,147 @@
+body
+{
+	background-color: #DEB887;
+	font-family: Helvetica;
+}
+section
+{
+	margin-left: 0.5em;
+	border-top-width: 0.3em;
+	border-top-style: solid;
+	border-top-color: green;
+	border-bottom-width: 0.3em;
+	border-bottom-style: solid;
+	border-bottom-color: green;
+	background-color: white;
+}
+header
+{
+	border-width: 0.3em;
+	border-style: groove;
+	border-color: lightgrey;
+	border-radius: 0.9em;
+	background-image: url("nourriture.png");
+	background-repeat: repeat;
+	margin-bottom: 2.5em;
+}
+header h1
+{
+	margin-left: 0.3em;
+	text-shadow: 0 0 0.2em black;
+	color: green; 
+	font-family: Helvetica;
+	font-size: 3em;
+}
+header h2
+{
+	margin-left: 0.3em;
+}
+header ul li
+{
+	display: inline;
+}
+header nav ul  li a
+{
+	position: relative;
+	background-color: darkgreen;
+	border-radius: 0.2em;
+	padding: 0.2em;
+	border-width: 0.1em;
+	border-style: solid;
+	border-color: black;
+	color: white;
+	text-align: center;
+	
+}
+nav ul li form input, nav ul li form button
+{
+	float: right;
+	margin-top: 0.5em;
+}
+h2
+{
+	margin-left: 0.5em;
+	font-family: Helvetica;
+}
+#infos 
+{ 
+	margin-left: 3em;
+	margin-right: 3em;
+	float:left;
+}
+#infos img
+{
+	height: 10em;
+}
+#infos ul 
+{
+	border-width: 0.2em;
+	background: AliceBlue;
+	border-color: palegreen;
+	border-style: outset;
+	border-radius: 0.3em;
+}
+#description
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: palegreen;
+	padding: 0.9em;
+	border-radius: 0.5em;
+    box-shadow: 1px 1px 12px #555;
+	display:inline-block;
+	width: 20em;
+	margin-left: 0.5em;
+	margin-bottom: 0.5em;	
+}
+#description p
+{
+	text-align: justify;
+}
+#choix button
+{
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	border-radius: 0.2em;
+	background-color: palegreen;
+	color: blue;
+}
+#choix button:hover
+{
+	background-color: green;
+	color: white;
+}
+#commentaire h2
+{
+	font-size: 1em;
+	color: green;
+}
+#commentaire p
+{
+	margin-left: 0.5em;
+}
+#commentaire textarea
+{
+	margin-left: 1em;
+	margin-bottom: 0.5em;
+	border-width: 0.2em;
+	border-color: black;
+	width: 20em;
+	height: 5em;
+}
+#commentaire button
+{
+	margin-bottom: 2em;
+}
+
+#confirmation
+{
+	display: none;
+}
+#confirmation:target
+{
+	display: inline-block;
+	margin-bottom:5em;
+	font-style: italic;
+}
