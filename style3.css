@@ -12,32 +12,55 @@ section
 header
 {
 	border-width: 0.3em;
-	border-style: groove;
-	border-color: lightgrey;
+	border-style: solid;
+	border-color: white;
 	border-radius: 0.9em;
-	background-image: url("nourriture.png");
-	background-repeat: repeat;
-	margin-bottom: 2.5em;
+	background-image: url("images/background-header.jpg");
+	background-size: 50%;
+    background-repeat: repeat;
+	margin-bottom:2.5em;
 }
+
 header h1
 {
 	margin-left: 0.3em;
+	text-align: center;
 	text-shadow: 0 0 0.2em black;
-	color: green; 
-	font-family: Helvetica;
-	font-size: 3em;
+	color: white; 
+	font-family: Britannic, Helvetica;
+	font-size: 2.3em;
+	background-color: #FF9933;
+	border: 0.2em double black;
+	border-radius: 50%;
+	padding: 0.35em;
+	display:inline-block;
 }
+
 header h2
 {
-	margin-left: 0.3em;
+	font-family: Aharoni;
+	display:block;
+	text-align:right;
+	margin-right: 0.5em;
+	margin-top: 0em;
+	font-size: 1.7em;
+	position:relative;
+	bottom: 3em;
+	color:white;
 }
+
+header ul
+{
+	margin-bottom:0em;
+}
+
 header ul li
 {
 	display: inline;
 }
 header nav ul  li a
 {
-	position: relative;
+	position:relative;
 	background-color: darkgreen;
 	border-radius: 0.2em;
 	padding: 0.2em;
@@ -46,13 +69,19 @@ header nav ul  li a
 	border-color: black;
 	color: white;
 	text-align: center;
-	
+	text-decoration: none;
+	font-family: Aparajita;
+	font-size: 1.3em;
+	display:inline-block;
 }
-nav ul li form input, nav ul li form button
+header nav ul li form input, nav ul li form button
 {
 	float: right;
-	margin-top: 0.5em;
-}
+	position:relative;
+	bottom:2em;
+	right: 1em;
+	
+} 
 h2
 {
 	margin-left: 0.5em;
